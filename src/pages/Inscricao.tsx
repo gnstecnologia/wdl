@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { DollarSign, Clock, TrendingUp, Award, Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hero-home.jpg";
+import heroImage from "@/assets/hero-inscricao.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
