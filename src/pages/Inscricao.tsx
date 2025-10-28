@@ -270,22 +270,26 @@ const Inscricao = () => {
 
             {/* Contato Direto */}
             <div className="mt-8 text-center">
-              <p className="font-sans text-foreground/80 mb-4">Ou entre em contato diretamente:</p>
+              <p className="font-sans text-white mb-4">Ou entre em contato diretamente:</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="mailto:weddingdestinationlab@gmail.com"
-                  className="flex items-center justify-center gap-2 font-sans text-secondary hover:underline"
+                  className="flex items-center justify-center gap-3 font-sans text-white hover:text-white/80 transition-colors"
                 >
-                  <Mail size={18} />
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                    <Mail size={16} className="text-secondary" />
+                  </div>
                   weddingdestinationlab@gmail.com
                 </a>
                 <a
                   href="https://wa.me/5521977432356"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 font-sans text-secondary hover:underline"
+                  className="flex items-center justify-center gap-3 font-sans text-white hover:text-white/80 transition-colors"
                 >
-                  <Phone size={18} />
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                    <Phone size={16} className="text-secondary" />
+                  </div>
                   +55 21 97743-2356
                 </a>
               </div>
