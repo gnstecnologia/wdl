@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Clock, MapPin, Users, Star, Utensils, Plane } from "lucide-react";
+import { Clock, MapPin, Users, Star, Utensils, Plane, Calendar } from "lucide-react";
 import heroImage from "@/assets/hero-evento.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -236,7 +236,10 @@ const OEvento = () => {
 
           <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-white hover:bg-white/90 text-secondary font-sans text-lg px-8 py-6 border-2 border-green shadow-white hover:shadow-green transition-all duration-300">
-              <Link to="/inscricao">Garanta Sua Vaga</Link>
+              <Link to="/inscricao" className="flex items-center gap-2">
+                <Calendar className="w-5 h-5" />
+                Garanta Sua Vaga
+              </Link>
             </Button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Users, Globe, Heart, Leaf, Sparkles } from "lucide-react";
+import { Award, Users, Globe, Heart, Leaf, Sparkles, Calendar } from "lucide-react";
 import heroImage from "@/assets/hero-curadoria.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -186,7 +186,10 @@ const Curadoria = () => {
 
             <div className="mt-12">
               <Button asChild size="lg" className="bg-white hover:bg-white/90 text-secondary font-sans text-lg px-8 py-6 border-2 border-green shadow-white hover:shadow-green transition-all duration-300">
-                <Link to="/inscricao">Faça Parte do WDL</Link>
+                <Link to="/inscricao" className="flex items-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  Faça Parte do WDL
+                </Link>
               </Button>
             </div>
           </div>

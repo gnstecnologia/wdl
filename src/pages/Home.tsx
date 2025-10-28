@@ -26,14 +26,17 @@ const Home = () => {
           <h1 className="font-display text-5xl md:text-7xl font-bold mb-6">
             Wedding Destination Lab
           </h1>
-          <p className="font-display text-2xl md:text-3xl mb-4 text-muted">
+          <p className="font-display text-2xl md:text-3xl mb-4 text-white">
             O Futuro Ancestral do Mercado de Casamentos
           </p>
           <p className="font-sans text-lg md:text-xl mb-8 max-w-3xl mx-auto">
             Congresso de Destination Wedding com foco em networking internacional, apoiado pelo Turismo de Portugal.
           </p>
           <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-sans text-lg px-8 py-6">
-            <Link to="/inscricao">Garanta sua Vaga para 2026</Link>
+            <Link to="/inscricao" className="flex items-center gap-2">
+              <Calendar className="w-5 h-5" />
+              Garanta sua Vaga para 2026
+            </Link>
           </Button>
         </div>
       </section>
@@ -91,7 +94,10 @@ const Home = () => {
                   Posicionamento e expansão internacional para profissionais que buscam crescer no mercado de destination weddings.
                 </p>
                 <Button asChild variant="outline" className="w-full border-2 border-green text-secondary hover:bg-secondary hover:text-secondary-foreground shadow-green-soft hover:shadow-green transition-all duration-300">
-                  <Link to="/inscricao">Saiba Mais</Link>
+                  <Link to="/inscricao" className="flex items-center justify-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    Saiba Mais
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -103,7 +109,10 @@ const Home = () => {
                   Exposição e negócios B2B com profissionais de alto nível do mercado de casamentos.
                 </p>
                 <Button asChild variant="outline" className="w-full border-2 border-green text-secondary hover:bg-secondary hover:text-secondary-foreground shadow-green-soft hover:shadow-green transition-all duration-300">
-                  <Link to="/inscricao">Saiba Mais</Link>
+                  <Link to="/inscricao" className="flex items-center justify-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    Saiba Mais
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -115,7 +124,10 @@ const Home = () => {
                   Networking qualitativo com profissionais do Brasil e Portugal para expandir sua rede de contatos.
                 </p>
                 <Button asChild variant="outline" className="w-full border-2 border-green text-secondary hover:bg-secondary hover:text-secondary-foreground shadow-green-soft hover:shadow-green transition-all duration-300">
-                  <Link to="/inscricao">Saiba Mais</Link>
+                  <Link to="/inscricao" className="flex items-center justify-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    Saiba Mais
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -191,7 +203,10 @@ const Home = () => {
             Garanta sua vaga no congresso mais importante do mercado de destination wedding.
           </p>
           <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-sans text-lg px-8 py-6 border-2 border-white shadow-green hover:shadow-white transition-all duration-300">
-            <Link to="/inscricao">Inscreva-se Agora</Link>
+            <Link to="/inscricao" className="flex items-center gap-2">
+              <Calendar className="w-5 h-5" />
+              Inscreva-se Agora
+            </Link>
           </Button>
         </div>
       </section>
