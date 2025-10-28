@@ -23,13 +23,13 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="font-display text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="font-display text-5xl md:text-7xl font-bold mb-6" style={{textShadow: '3px 3px 12px rgba(0,0,0,0.9), 0 0 25px rgba(0,0,0,0.7)'}}>
             Wedding Destination Lab
           </h1>
-          <p className="font-display text-2xl md:text-3xl mb-4 text-white">
+          <p className="font-display text-2xl md:text-3xl mb-4 text-white" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6)'}}>
             O Futuro Ancestral do Mercado de Casamentos
           </p>
-          <p className="font-sans text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+          <p className="font-sans text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white" style={{textShadow: '1px 1px 6px rgba(0,0,0,0.8), 0 0 15px rgba(0,0,0,0.6)'}}>
             Congresso de Destination Wedding com foco em networking internacional, apoiado pelo Turismo de Portugal.
           </p>
           <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-sans text-lg px-8 py-6">
