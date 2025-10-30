@@ -23,7 +23,7 @@ const OEvento = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="font-display text-5xl md:text-6xl mb-6">
             A Imersão de Luxo que Conecta
           </h1>
           <p className="font-display text-xl md:text-2xl max-w-3xl mx-auto">

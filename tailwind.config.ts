@@ -13,8 +13,9 @@ export default {
       },
     },
     fontFamily: {
-      display: ["Charm", "cursive"],
+      display: ["Kaisei Tokumin", "serif"],
       bellefair: ["Bellefair", "serif"],
+      bowlby: ["Bowlby One SC", "sans-serif"],
       sans: ["Montserrat", "sans-serif"],
     },
     extend: {
