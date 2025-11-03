@@ -146,17 +146,19 @@ const Inscricao = () => {
       {/* Formulário */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="font-display text-4xl font-bold text-center mb-4">
-              Fale Conosco e Receba a Proposta Completa
-            </h2>
-            <p className="font-sans text-center text-foreground/80 mb-12">
-              Preencha o formulário abaixo ou entre em contato diretamente via WhatsApp
-            </p>
-            
-            <Card>
-              <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
+          <h2 className="font-display text-4xl font-bold text-center mb-4">
+            Fale Conosco e Receba a Proposta Completa
+          </h2>
+          <p className="font-sans text-center text-foreground/80 mb-12">
+            Preencha o formulário abaixo ou entre em contato diretamente via WhatsApp
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto items-stretch">
+            {/* Coluna do Formulário */}
+            <div>
+              <Card>
+                <CardContent className="pt-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="nome">Nome *</Label>
@@ -261,38 +263,45 @@ const Inscricao = () => {
                     </div>
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-secondary hover:bg-secondary/90">
-                    Enviar e Receber Proposta
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+                    <Button type="submit" size="lg" className="w-full bg-secondary hover:bg-secondary/90 hover-lift transition-all duration-500">
+                      Enviar e Receber Proposta
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
 
-            {/* Contato Direto */}
-            <div className="mt-8 text-center">
-              <p className="font-sans text-white mb-4">Ou entre em contato diretamente:</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="mailto:weddingdestinationlab@gmail.com"
-                  className="flex items-center justify-center gap-3 font-sans text-white hover:text-white/80 transition-colors"
-                >
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                    <Mail size={16} className="text-secondary" />
-                  </div>
-                  weddingdestinationlab@gmail.com
-                </a>
-                <a
-                  href="https://wa.me/5521977432356"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 font-sans text-white hover:text-white/80 transition-colors"
-                >
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                    <Phone size={16} className="text-secondary" />
-                  </div>
-                  +55 21 97743-2356
-                </a>
+              {/* Contato Direto */}
+              <div className="mt-8 text-center">
+                <p className="font-sans text-white mb-4">Ou entre em contato diretamente:</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a
+                    href="mailto:weddingdestinationlab@gmail.com"
+                    className="flex items-center justify-center gap-3 font-sans text-white hover:text-white/80 transition-colors"
+                  >
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                      <Mail size={16} className="text-secondary" />
+                    </div>
+                    weddingdestinationlab@gmail.com
+                  </a>
+                  <a
+                    href="https://wa.me/5521977432356"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 font-sans text-white hover:text-white/80 transition-colors"
+                  >
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                      <Phone size={16} className="text-secondary" />
+                    </div>
+                    +55 21 97743-2356
+                  </a>
+                </div>
               </div>
+            </div>
+
+            {/* Coluna das Imagens */}
+            <div className="flex flex-col gap-4 h-full">
+              <img className="w-full flex-1 object-cover rounded-lg img-elegant" src="https://www.arthurcaliman.com.br/wp-content/uploads/2023/12/assessora-casamento-praia.jpg.webp" alt="Assessora de casamento" loading="lazy" />
+              <img className="w-full flex-1 object-cover rounded-lg img-elegant" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80" alt="Reunião B2B no hotel em Lisboa" loading="lazy" />
             </div>
           </div>
         </div>

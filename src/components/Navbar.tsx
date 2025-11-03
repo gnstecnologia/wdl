@@ -33,14 +33,14 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-sans text-sm font-medium transition-colors hover:text-secondary ${
+                className={`font-sans text-sm font-medium transition-all duration-500 hover:text-secondary ${
                   isActive(item.path) ? "text-secondary" : "text-foreground"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button asChild variant="default" size="sm" className="bg-secondary hover:bg-secondary/90">
+            <Button asChild variant="default" size="sm" className="bg-secondary hover:bg-secondary/90 hover-lift transition-all duration-500">
               <Link to="/inscricao">Garanta Sua Vaga</Link>
             </Button>
           </div>

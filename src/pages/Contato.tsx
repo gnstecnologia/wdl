@@ -43,10 +43,10 @@ const Contato = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="font-display text-5xl md:text-6xl mb-6">
+          <h1 className="font-display text-5xl md:text-6xl mb-6 animate-fade-in-up">
             Conecte-se com o WDL
           </h1>
-          <p className="font-sans text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="font-sans text-xl text-white/90 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
             Estamos aqui para responder suas dúvidas e ajudá-lo a fazer parte do maior congresso 
             de destination wedding em Portugal.
           </p>
@@ -97,7 +97,7 @@ const Contato = () => {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full bg-secondary hover:bg-secondary/90">
+                    <Button type="submit" size="lg" className="w-full bg-secondary hover:bg-secondary/90 hover-lift transition-all duration-500">
                       Enviar Mensagem
                     </Button>
                   </form>

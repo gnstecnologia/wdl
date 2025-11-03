@@ -23,13 +23,13 @@ const Curadoria = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="font-display text-5xl md:text-6xl mb-6">
+          <h1 className="font-display text-5xl md:text-6xl mb-6 animate-fade-in-up">
             Manoela Cesar
           </h1>
-          <p className="font-display text-2xl md:text-3xl mb-4 text-accent">
+          <p className="font-display text-2xl md:text-3xl mb-4 text-accent animate-fade-in-up animation-delay-200">
             A Curadora que Redefine o Mercado
           </p>
-          <p className="font-display text-xl italic">
+          <p className="font-display text-xl italic animate-fade-in-up animation-delay-300">
             "Ritualizar é preciso!"
           </p>
         </div>
@@ -116,6 +116,23 @@ const Curadoria = () => {
         </div>
       </section>
 
+      {/* Portfólio Curado (Lisboa/casamentos) */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
+            Portfólio Curado
+          </h2>
+          <p className="font-display text-xl text-center text-muted-foreground mb-12">
+            Seleção visual de casamentos e experiências em Lisboa
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <img className="w-full h-64 object-cover rounded-lg" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80" alt="Noivos em miradouro de Lisboa" loading="lazy" />
+            <img className="w-full h-64 object-cover rounded-lg" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80" alt="Azulejos portugueses na mesa" loading="lazy" />
+            <img className="w-full h-64 object-cover rounded-lg" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800&q=80" alt="Cerimônia ao ar livre com vista de Lisboa" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
       {/* Missão, Visão e Valores */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -168,7 +185,7 @@ const Curadoria = () => {
               O Perfil do Profissional WDL
             </h2>
             
-            <Card className="bg-white border-2 border-green shadow-white hover:shadow-green transition-all duration-300">
+            <Card className="bg-white border-2 border-green shadow-white hover:shadow-green transition-all duration-500 hover-glow">
               <CardContent className="pt-8">
                 <p className="font-sans text-lg leading-relaxed mb-6 text-foreground">
                   O Wedding Destination Lab é ideal para <strong>profissionais de casamento bem posicionados</strong> que 
@@ -185,7 +202,7 @@ const Curadoria = () => {
             </Card>
 
             <div className="mt-12">
-              <Button asChild size="lg" className="bg-white hover:bg-white/90 text-secondary font-sans text-lg px-8 py-6 border-2 border-green shadow-white hover:shadow-green transition-all duration-300">
+              <Button asChild size="lg" className="bg-white hover:bg-white/90 text-secondary font-sans text-lg px-8 py-6 border-2 border-green shadow-white hover:shadow-green transition-all duration-500 hover-glow">
                 <Link to="/inscricao" className="flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
                   Faça Parte do WDL
